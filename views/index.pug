@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title storage
+    body 
+        section 
+            h1 Variable 
+            form(method="POST" action="/va")
+                input(name="target")
+                button CHECK
+            div RESULT : #{VAR}
+            hr
+
+        section 
+            h1 Storage
+            form(method="POST" action="/st")
+                input(name="target")
+                button CHECK
+            div RESULT : #{STO}
+            hr
+
+        section 
+            h1 Cookie - Session
+            form(method="POST" action="/cs")
+                input(name="target")
+                button CHECK
+            div RESULT : #{SES}
+            hr
